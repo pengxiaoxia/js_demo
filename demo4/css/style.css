@@ -1,0 +1,22 @@
+*{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+.wrap{
+	width:500px;
+	height:300px;
+	margin:0 auto;
+}
+div{
+	width: 150px;
+	height:150px;
+	margin: 10px auto;
+	background: orange;
+}
+.active{
+	width: 150px;
+	height: :150px;
+	background: #fff;
+	border: 3px solid red;
+}

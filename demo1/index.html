@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="btn">
+			<input type="button" value="变宽">
+			<input type="button" value="变高">
+			<input type="button" value="变色">
+			<input type="button" value="隐藏">
+			<input type="button" value="重置">
+		</div>
+		<div id="box" class="box"></div>
+	</div>
+	<script>
+		var inp=document.getElementsByTagName('input'),
+			box=document.getElementById('box');
+			oatt=['height','width','background','display','display'];
+			oval=['200px','200px','blue','none','block'];
+		var fn=function(ele,attr,value){
+			ele.style[attr]=value
+		} 
+		for(var i=0;i<inp.length;i++){
+			inp[i].index=i;
+			inp[i].onclick=function(){
+				if(this.index==inp.length-1 ){
+					box.style.cssText=""
+				}
+				//this.index == inp.length - 1 && (box.style.cssText = "");
+
+				fn(box,oatt[this.index],oval[this.index])
+			}
+		}
+	</script>
+</body>
+</html>

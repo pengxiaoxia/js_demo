@@ -1,0 +1,50 @@
+*{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+.wrap{
+	width:500px;
+	margin:0 auto;
+}
+#red{
+	background: red;
+	border-color: red;
+}
+#orange{
+	background: yellow;
+	border-color: yellow;
+}
+#black{
+	background: black;
+	border-color: black;
+}
+.list{
+	margin:20px auto;
+	padding-bottom: 20px;
+}
+.list li{
+	width: 6px;
+	height: 6px;
+	border:4px;
+	border-style:solid;
+	cursor:pointer;
+	text-indent:-999999999;
+	float:left;
+	margin-left:10px;
+	overflow: hidden;
+}
+.current{
+	background: #fff!important;
+}
+.info{
+	clear:both;
+	margin-top: 15px;
+}
+.info li{
+	float:left;
+	width:82px;
+	text-align: center;
+	background: #0f0;
+	border-right: 1px solid #fff;
+}

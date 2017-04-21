@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<section class="wrap">
+		<p><button id="btn">将DIV颜色变成红色</button></p>
+		<section class="div">
+			<div></div>
+			<div></div>
+			<div></div>
+		</section>
+
+		
+	</section>
+	<script>
+		var btn=document.getElementById('btn'),
+			odiv=document.getElementsByTagName('div')
+			
+		btn.onclick=function(){
+			for(var i=0;i<odiv.length;i++){
+				odiv[i].style.background='red';
+			}
+			
+		}
+	</script>
+</body>
+</html>

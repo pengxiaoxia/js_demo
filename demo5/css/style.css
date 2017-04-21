@@ -1,0 +1,22 @@
+*{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+.wrap{
+	width:500px;
+	margin:0 auto;
+}
+p{
+	margin-top: 20px;
+}
+.div{
+	margin-top: 10px;
+}
+.div div{
+	width: 100px;
+	height: 100px;
+	background: #000;
+	float: left;
+	margin-right: 10px;
+}

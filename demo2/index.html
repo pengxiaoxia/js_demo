@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/orange.css">
+</head>
+<body>
+	<div class="wrap">
+		<ul class="list" id="list">
+			<li id="red">红</li>
+			<li id='orange' class="current">绿</li>
+			<li id='black'>黑</li>
+		</ul>
+		<ul class="info">
+			<li>新闻</li>
+			<li>娱乐</li>
+			<li>体育</li>
+			<li>电影</li>
+			<li>音乐</li>
+			<li>旅游</li>
+		</ul>
+	</div>
+	<script>
+		var lis=document.getElementById('list').getElementsByTagName('li');
+			links=document.getElementsByTagName('link')[1];
+			for(var i=0;i<lis.length;i++){
+				lis[i].onclick=function(){
+					console.log(lis)
+					 for(n in lis){
+					 	console.log(n)
+						lis[n].className='';
+						this.className='current';
+						links['href']='css/'+this.id+'.css';
+						
+					 }
+				}
+			}
+	</script>
+</body>
+</html>
