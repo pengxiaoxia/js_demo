@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;list-style: none;}
+		.wrap{width:700px; height: 500px; margin: 20px auto;}
+		input{width:250px;height: 30px;margin-bottom: 10px; border: 2px solid #ccc; font-size: 14px;line-height: 30px;text-indent: 10px;border-radius: 3px;}
+		button{width:80px;height: 30px;text-align: center;line-height: 30px;}
+		#sum{font-size: 30px;color:red;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<label for="">
+			<input type="text" value="11,22">
+			<span>输入数字求和，数字之间用半角","号分隔</span>
+		</label>
+		<p><button id="btn">求和</button></p>
+		<span id="sum"></span>
+	</div>	
+		<script>
+			var inp=document.getElementsByTagName('input')[0],
+				sum=document.getElementById('sum');
+				btn=document.getElementById('btn');
+				inp.onkeyup=function(){
+					this.value=this.value.replace(/[^(\d)|(,)]/,'')
+				}
+				btn.onclick=function(){
+					var arr=inp.value.split(",");
+					var num=0;
+					for(var i=0;i<arr.length;i++){
+						num+=parseInt(arr[i])
+					}
+					sum.innerHTML=num
+
+				}
+
+
+
+
+
+
+
+
+		</script>
+	
+</body>
+</html>

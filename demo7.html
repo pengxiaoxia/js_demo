@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin:0;padding:0;list-style: none;}
+		#wrap{width: 200px;margin:20px auto;}
+		#btn{width: 80px;height: 30px;text-align: center;line-height: 30px;border-radius: 5px;}
+		#uls{margin-top: 10px;	display: none;}
+		#uls li{width: 80px;height: 30px;text-align: center;line-height: 30px;background: skyblue;border-bottom: 1px solid #fff;}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<button id="btn">输入法</button>
+	<ul id="uls">
+		<li><a href="#"></a>百度</li>
+		<li><a href="#"></a>搜狗</li>
+		<li id="close"><a href="#"></a>关闭</li>
+	</ul>
+</div>
+	<script>
+		var btn=document.getElementById('btn'),
+			uls=document.getElementById('uls'),
+			close=document.getElementById('close'),
+			lis=document.getElementsByTagName('li');
+			/*btn.onclick=function(){
+				console.log(1)
+				if(uls.style.display=='block'){
+					uls.style.display='none'
+				}else{
+					uls.style.display='block'
+				}
+			}
+			close.onclick=function(){
+				this.parentNode.style.display='none'
+			}*/
+			btn.onclick=function(){
+				uls.style.display=uls.style.display=="block"?"none":"block"
+			}
+			close.onclick=function(){
+				uls.style.display='none'
+			}
+	</script>
+</body>
+</html>

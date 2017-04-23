@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin:0;padding:0;}
+		#mark{position:absolute;left: 0;top: 0;bottom:0;right:0;background: rgba(0,0,0,0.5);display: none;}
+		#box{width: 300px;height:250px;border:2px solid red;position:absolute;left:50%;top:50%;margin-left: -150px;margin-top: -125px;display: none;background: #fff;}
+		h2{height: 40px;border-bottom:2px solid red;position:relative; background: yellow;}
+		span{position:absolute;right:10px;top:0px;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<button id="btn">点击弹出层</button>
+		<div id="mark"></div>
+		<div id="box">
+			<h2><span id="close">X</span></h2>
+			<div class="cont"></div>
+		</div>
+	</div>
+	<script>
+		var btn=document.getElementById('btn'),
+			mark=document.getElementById('mark'),
+			box=document.getElementById('box'),
+			close=document.getElementById('close');
+			btn.onclick=function(){
+				mark.style.display='block';
+				box.style.display='block'
+			}
+			close.onclick=function(){
+				mark.style.display='none';
+				box.style.display='none'
+			}
+
+	</script>
+</body>
+</html>
