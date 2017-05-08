@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<a href="">vvvvvvvvv</a>
+<div id="box" style="width: 300px;height: 300px"></div>
+<script>
+var a=3;
+function text(){
+	var a=0;
+	this.a=9;
+	console.log(a);
+	console.log(this);
+	var a;
+	console.log(a)
+}
+//text()
+var b=new text();
+console.log(b.a)
+//数组反转
+/*var arr=[3,5,7,8,9];
+for(var i=0;i<arr.length;i++){
+	for(var j=i+1;j<arr.length;j++){
+
+		var temp;
+		temp=arr[i];
+		arr[i]=arr[j];
+		arr[j]=temp;
+	}
+}
+console.log(arr)*/
+/*var a=parseInt("11",22);
+console.log(a)*/
+/*var name='window.Name';
+function OuterFoo(){
+	this.name="Outer Name";
+	function InnerFoo(){
+		var name="Inner Name";
+		alert(name+","+this.name)
+	}
+	return InnerFoo
+}
+OuterFoo()()*/
+
+/*for(var i=1;i<=5;i++){
+	setTimeout(function timer(i){
+		console.log(i)
+	},i*1000)
+}*/
+
+/*function aa(){
+	var a=b=2;
+
+}
+aa()
+console.log(b)
+console.log(a)*/
+/*var n=999;
+function f1(){
+	console.log(n)
+}
+f1()
+function f2(){
+	 a=44
+}
+f2()
+console.log(a)
+function f1(){
+	n=111
+	function f2(){
+		console.log(n)
+	}
+	return f2
+}
+var result=f1();
+result()*/
+/*var box=document.getElementById('box');
+console.log(box.style.height);*/
+
+
+
+/*function geturl(url){
+	var params={};
+	var arr=url.split("?")
+	
+	if(arr.length<=1)return params;
+	arr=arr[1].split('&')
+	//console.log(arr)["name='张三'", "age=18", "addr='北京'"]
+	for(var i=arr.length-1;i>=0;i--){
+		var a=arr[i].split("=")
+		//console.log(a)
+		params[a[0]]=a[1]
+	}
+	return params
+}
+//console.log(geturl("https://123.sogou.com/?name='张三'&age=18&addr='北京'"))
+var ps=geturl("https://123.sogou.com/?name='张三'&age=18&addr='北京'");
+var str="?";
+var count=0;
+for(i in ps){
+	count++;
+	str+=("p"+count)+"="+ps[i]+"&"
+}
+console.log(str)
+var a=document.getElementsByTagName('a')[0];
+a.onclick=function(e){
+	
+	location.href=this.href+str.substr(0,str.length-1)
+	return false;
+}
+console.log(str.substr(0,str.length-1))*/
+
+
+
+
+/*function A1(){
+	var workers=[];
+	for(var i=0;i<3;i++){
+		workers[i]={
+			run:function(){
+				console.log(i)
+			}
+		}
+	}
+	return workers
+}
+A1()*/
+
+
+/*function A(){
+	this.val=1;
+	this.run=function(){
+		console.log(1)
+	}
+}
+var o1=A();
+var o2=new A();
+//console.log(o1.val)
+console.log(o2.val)*/
+
+
+/*var str=[1,1,1,1,1];
+console.log(str.length);
+str.length=3;
+console.log(str.length)*/
+/*var str="border-left-color";
+var arr=str.split("-");
+var one=arr[0];
+for(var i=1;i<arr.length;i++){
+	one=one+arr[i].slice(0,1).toUpperCase()+arr[i].slice(1)
+}
+console.log(one)*/
+
+
+
+
+		//a+(a-1)+(a-2)+(a-3)+...+1
+		/*function sum(a){
+			var sum=a;
+			for(var i=a;i>1;i--){
+				sum=sum+(i-1)
+				console.log(sum)
+			}
+			return sum
+		}
+		console.log(sum(5))*/
+		//获取参数后缀名
+		/*function getName(filename){
+			var ind=filename.lastIndexOf(".");
+			if(ind==-1){
+				return "文件格式错误"
+			}else{
+				return filename.substr(ind)
+			}
+		}
+		console.log(getName("filename.text"))*/
+		/*var i=2;
+		for(var i=0;i<=5;i++){
+			console.log(i)
+		}
+		console.log(i)*/
+		/*function ajax(opt){
+			var url=opt.url,
+			method=opt.method||"get",
+			async=opt.async||true,
+			data=opt.data||null,
+			xhr=null;
+			if(window.XMLHttpRequest){
+				xhr=new XMLHttpRequest();
+			}else{
+				xhr=new ActiveXobject("Micorsoft.XMLHTTP")
+			}
+			xhr.open(method,url,async);
+			xhr.send(data);
+			xhr.onreadstatechange=function(){
+				if(xhr.readstate==4){
+					if(xhr.state==200){
+						if(opt.sucess)opt.success(xhr.responseText)
+					}
+				}else{
+					if(opt.error)opt.error()
+				}
+			}
+
+		}*/
+
+		
+		
+	</script>
+</body>
+</html>

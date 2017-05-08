@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+/*	var crr=[4,78,5,7,88,66,44];
+	function quick(arr){
+		if(arr.length<1){
+			return arr;
+		}
+		var left=[],right=[];
+		var pointIndex=Math.floor(arr.length/2);
+		var num=arr.splice(pointIndex,1)[0];
+		//console.log(num)
+		
+
+		for(var i=0;i<arr.length;i++){
+
+			if(arr[i]<num){
+				left.push(arr[i])
+			}else if(arr[i]>num){
+				right.push(arr[i])
+			}
+		}
+
+		return quick(left).concat(num,quick(right))
+
+	}
+
+console.log(quick(crr))*/
+
+/*var fullname='langurage';
+var obj={
+	fullname:"javascript",
+	prop:{
+
+		getfullname:function(){
+			
+			return this.fullname
+		}
+	}
+}
+
+console.log(obj.prop.getfullname())
+var test=obj.prop.getfullname;
+console.log(test());
+
+var name='window';
+var tom={
+	name:"tom",
+	wait:function(){
+		var fun=function(){
+		console.log(this.name)
+	}
+
+		fun(); 
+	}
+}
+
+tom.wait()*/
+
+
+/*var name = "windowss";
+        var object = {
+            name : "object",
+            getNameFunc : function(){
+                return function(){
+                    return this.name;
+                };
+            }
+        };
+        var obj = {
+            name : "object",
+            getNameFunc : object.getNameFunc()
+        };
+        function foo() {
+            return this.name;
+        }
+        console.log(foo());//Window
+        console.log(object.getNameFunc()());  //Window
+        console.log(obj.getNameFunc())*/
+
+
+
+/*function father (a) {
+    var result=a;
+    var result2=null;
+    function son (a) {
+    	//console.log(a)
+    	result2=a;
+
+    }
+    console.log( result+" and "+result2);
+}
+father(123);  //"123 and null"*/
+
+function father (a) {
+    var result=a;
+    var result2=null;
+   
+    var a1=5;
+    return function(a) {
+
+    	result2=a1;
+    	 console.log(a1)
+    	return result+" and "+result2;
+    }
+}
+console.log(father(123)());  //"123 and undefined"
+
+
+
+		/*function Person(name,age){
+			 this.name = name;
+             this.age = age;
+             this.getName = function() {
+                 return this.name;
+             }
+		}
+		var person=new Person();
+		console.log(person)
+
+		function Child(name,age){
+		  return Person.apply(this,[name,age])
+		}
+
+		var p1=new Child("zhangsan",19);
+		console.log(p1)*/
+
+	</script>
+</body>
+</html>

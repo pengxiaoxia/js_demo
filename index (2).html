@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+
+
+
+
+
+  
+//   var a1=10;
+
+// var a2=20;
+
+// alert('a1+a2='+a1+a2)
+//   function getParam(x,y){
+//  arguments[1] = 8;
+//  console.log(arguments)
+//  console.log(y);
+// }
+// getParam(1,5)
+
+//   var arr=[{
+//   age:2,
+//   id:0
+// },{
+//   age:12,
+//   id:9
+// },{
+//   age:4,
+//   id:8
+// },
+// {
+//   age:22,
+//   id:6
+// }];
+// var brr=[]
+// for(var i=0;i<arr.length;i++){
+// brr.push(arr[i].age)
+
+// }
+// console.log(brr)
+//   for(var j=0;j<brr.length;j++){
+//      for(var m=j;m<brr.length;m++){
+//         if(brr[m]<brr[j]){
+//           var temp;
+//           temp=arr[m];
+//           arr[m]=arr[j]
+//           arr[j]=temp
+//         }
+//      }     
+// }
+// console.log(arr)
+
+//   var x = 1;    
+// function fn(n){
+//   n = n+1
+// }; 
+// y = fn(x);
+// console.log(y)
+// fn1();
+// var fn1 = function(a){
+//  alert(a); 
+ 
+
+// }
+// var n = "miao wei ke tang".indexOf("wei");
+// console.log(parseFloat(''))
+// function fn1() {
+// var a = 0;
+// function fn2() { ++a; alert(a); }
+// return fn2;
+// }
+// fn1()();
+// var newFn = fn1();
+// newFn();
+// newFn();
+// var a = 100;
+// function fn1() {
+// alert(a);
+// var a = 10;
+// }
+// alert( fn1() )
+// var arr = [1,2];
+// var arr2 = arr.concat();
+// arr2.push( arr.splice(1,0) );
+// console.log(arr2)
+// var arrHex=["0","2","3","4","5","6","7","8","9","a","b","c","d"];
+//     var fuhao = "#";
+//     for(var i=0;i<6;i++){
+//       var color = arrHex[Math.floor(Math.random()*arrHex.length)];
+//       fuhao= fuhao+color;
+//       // str =str+arrHex[a];
+//     }
+//     console.log(fuhao);
+// 		var a= (function(){
+//         return typeof arguments;
+// })( )
+// console.log(a)
+
+// 		var a='[1,2,3]';
+//        var b=JSON.parse(a);
+//        console.log(typeof b);
+//        console.log(typeof a); 
+
+//        var  a=(function f(f){
+//   return typeof f();
+// })(function(){return 1})
+// console.log(a) 
+// var a=20;
+// (function(){
+//         a=5;
+//         alert(window.a);
+//         var a=10;
+//         alert(a);
+//     })()
+     // var name='global';
+     //   var obj={
+     //      name:'obj',
+     //      dose:function(){
+     //         //this.name='dose';
+     //         return function(){
+     //            return this.name;
+     //         }
+     //      }
+     //   }
+     //   alert(obj.dose().call(obj))
+     
+   //  var a= function g(){return 23};
+ 		// alert(typeof a)
+         var foo={
+          bar:function(){
+               return this.baz
+          },
+          baz:1
+         };
+         var a=(function(){
+          return arguments[0];
+          //console.log(arguments)
+         })(foo.bar)
+         console.log(a)
+	</script>
+</body>
+</html>

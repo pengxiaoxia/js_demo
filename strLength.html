@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function len(str){
+			if(!arguments.length||!str){
+				return null 
+			}
+
+			if(""==str){
+				return 0
+			}
+
+			var l=0;
+			for(var i=0;i<str.length;i++){
+				if(str.charCodeAt(i)>255){
+					l+=2
+				}else{
+					l++
+				}
+			}
+			return l
+		}
+	console.log(len(" "))	
+	</script>
+</body>
+</html>
